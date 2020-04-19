@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Colour Game</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <h1 class="title">The Colour Game</h1>
+            <div class="top-game-display">
+                <button id="play-btn">Play</button>
+
+                <div class="displayNone" id="timer">0</div>
+                <div class="colourbox-container">
+                    <div class="displayNone" id="colourbox"></div>  
+                </div>
+                <div id="score-to-beat" class="displayNone">
+                    <div id="target">Target:</div>
+                    <div id="player1score">-</div>
+                </div>
+            </div>
+        </header>
+        
+        <section class="initial-display"> 
+            <div id="rules">RULES:
+                <ol>
+                    <li>Click the word of the colour shown.</li>
+                    <li>Winner is the player who has the quickest time.</li>
+                    <li>Incorrect clicks add 5 seconds to your time.</li>
+                </ol>
+            </div>
+            <div  id="selector">	
+                <label class="selector" for="gamelength">Choose Game Length</label>
+                <select class="selector" name="lengthSelector" id="length-select">
+                    <option value="short">Short (5 rounds)</option>
+                    <option value="medium">Medium (10 rounds)</option>
+                    <option value="long">Long (15 rounds)</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="bottom-game-display"  class="displayNone">
+            <div id="colour-grid">	
+                <div class="col col-left">
+                    <div class="color"  id="0">Yellow</div>
+                    <div class="color"  id="1">Blue</div>
+                    <div class="color" id="2">Green</div>
+                </div>
+                <div class="col col-centre">
+                    <div class="color"  id="3">Orange</div>
+                    <div class="color" id="4">Red</div>	
+                    <div class="color"  id="5">Purple</div>	
+                </div>
+                <div class="col col-right">
+                    <div class="color"  id="6">Brown</div>
+                    <div class="color"  id="7">Grey</div>
+                    <div class="color" id="8">Pink</div>
+                </div>	
+        </section>
+
+        <section class="change-player-message">
+            <p>Player 1 scored <span id="player-1-score">?</span> seconds!</p>
+            <p>Player 2 click start when you are ready.</p>
+            <div class=play2Btn>
+                <button id="play2Btn">Start</button>
+            </div>
+        </section>
+
+        <section class="game-over">
+                <h2 class="game-over-display displayNone"><span id="winner">?</span></h3>
+                <button id="play-again-btn" class="game-over-display displayNone">Play Again?</button>
+        </section>
+
+        
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+    </body>
+
+
+</html>
