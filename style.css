@@ -11,6 +11,7 @@ body {
     background-color: black;
     font-family: 'Sriracha', cursive;
     color: #0EEACA;
+    cursor: default;
 }
 
 header {
@@ -37,6 +38,7 @@ button {
     font: inherit;
     margin-top: 1rem;
     margin-bottom: 0.4rem;
+    cursor: pointer;
 }
 #play-btn {
     justify-self: center;
@@ -96,7 +98,9 @@ h1 {
     background-color: black;
     color: #0EEACA;
     border: 1px solid #EFD50C ;
+    cursor: pointer;
 }
+
 
 /*============= BOTTOM ============ */
 .initial-display {
@@ -144,6 +148,7 @@ h1 {
     font-size: 2rem;
     text-align: center;
     margin-top: 2rem;
+    cursor: pointer;
 }
 
 

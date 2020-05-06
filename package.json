@@ -1,0 +1,11 @@
+{
+  "name": "colour_game",
+  "version": "1.0.0",
+  "description": "Fun game where you compete to match a target colour and it's name in as short a time as possible",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Hurst",
+  "license": "ISC"
+}
